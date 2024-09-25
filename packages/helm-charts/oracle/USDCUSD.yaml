@@ -44,7 +44,7 @@ oracle:
     #     {exchange: 'Bybit', symbol: 'USDTUSDC', toInvert: true},
     #     {exchange: 'Kraken', symbol: 'USDTUSD', toInvert: false}
     #   ],
-  minPriceSourceCount: 5
+  minPriceSourceCount: 2
   reportStrategy: BLOCK_BASED
   reporter:
     blockBased:
