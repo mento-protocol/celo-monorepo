@@ -13,9 +13,6 @@ oracle:
   gasPriceMultiplier: 1.5
   priceSources: "[
       [
-        {exchange: 'COINBASE', symbol: 'EUROCEUR', toInvert: false}
-      ],
-      [
         {exchange: 'COINBASE', symbol: 'EUROCUSDC', toInvert: false},
         {exchange: 'COINBASE', symbol: 'USDTUSDC', toInvert: true},
         {exchange: 'COINBASE', symbol: 'USDTEUR', toInvert: false}
