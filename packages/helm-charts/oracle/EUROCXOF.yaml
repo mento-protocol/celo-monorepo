@@ -27,20 +27,20 @@ oracle:
       ],
 
       [
-        {exchange: 'COINBASE', symbol: 'EUROCUSD', toInvert: false},
-        {exchange: 'COINBASE', symbol: 'USDTUSD', toInvert: true},
+        {exchange: 'COINBASE', symbol: 'EUROCUSDC', toInvert: false},
+        {exchange: 'COINBASE', symbol: 'USDTUSDC', toInvert: true},
         {exchange: 'COINBASE', symbol: 'USDTEUR', toInvert: false},
         {exchange: 'ALPHAVANTAGE', symbol: 'EURXOF', toInvert: false, ignoreVolume: true}
       ],
       [
-        {exchange: 'COINBASE', symbol: 'EUROCUSD', toInvert: false},
-        {exchange: 'COINBASE', symbol: 'USDTUSD', toInvert: true},
+        {exchange: 'COINBASE', symbol: 'EUROCUSDC', toInvert: false},
+        {exchange: 'COINBASE', symbol: 'USDTUSDC', toInvert: true},
         {exchange: 'COINBASE', symbol: 'USDTEUR', toInvert: false},
         {exchange: 'CURRENCYAPI', symbol: 'EURXOF', toInvert: false, ignoreVolume: true}
       ],
       [
-        {exchange: 'COINBASE', symbol: 'EUROCUSD', toInvert: false},
-        {exchange: 'COINBASE', symbol: 'USDTUSD', toInvert: true},
+        {exchange: 'COINBASE', symbol: 'EUROCUSDC', toInvert: false},
+        {exchange: 'COINBASE', symbol: 'USDTUSDC', toInvert: true},
         {exchange: 'COINBASE', symbol: 'USDTEUR', toInvert: false},
         {exchange: 'XIGNITE', symbol: 'EURXOF', toInvert: false, ignoreVolume: true}
       ],
