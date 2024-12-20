@@ -3,6 +3,7 @@ import {
   getFornoWebSocketUrl,
   getLightNodeHttpRpcInternalUrl,
   getLightNodeWebSocketRpcInternalUrl,
+  getSslRegistryAddress,
 } from 'src/lib/endpoints'
 import { envVar, fetchEnv, fetchEnvOrFallback } from 'src/lib/env-utils'
 import {
@@ -80,6 +81,7 @@ export abstract class BaseOracleDeployer {
       `--set oracle.replicas=${this.replicas}`,
       `--set oracle.rpcProviderUrls.http=${httpRpcProviderUrl}`,
       `--set oracle.rpcProviderUrls.ws=${wsRpcProviderUrl}`,
+      `--set oracle.sslRegistryAddress=${getSslRegistryAddress(this.celoEnv)}`,
       `--set-string oracle.unusedOracleAddresses='${fetchEnvOrFallback(
         envVar.ORACLE_UNUSED_ORACLE_ADDRESSES,
         ''

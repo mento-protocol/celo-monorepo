@@ -32,6 +32,13 @@ export function getFornoWebSocketUrl(celoEnv: string) {
     : `wss://${celoEnv}-forno.${fetchEnv(envVar.CLUSTER_DOMAIN_NAME)}.org/ws`
 }
 
+export function getSslRegistryAddress(celoEnv: string) {
+  // https://github.com/mento-protocol/oracle-ssl-registry?tab=readme-ov-file#consuming
+  return celoEnv === 'rc1'
+    ? '0x72D96b39D207c231a3B803f569f05118514673AC'
+    : '0xE4ef75EF5Bde28079d8D38a968074f9Df0F43F6F'
+}
+
 export function getFullNodeHttpRpcInternalUrl(celoEnv: string) {
   return `http://${celoEnv}-fullnodes-rpc.${celoEnv}.svc.cluster.local:8545`
 }

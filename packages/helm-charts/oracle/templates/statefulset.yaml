@@ -141,6 +141,7 @@ spec:
 {{ include "common.env-var" (dict "name" "PROMETHEUS_PORT" "dict" .Values.oracle.metrics "value_name" "prometheusPort") | indent 8 }}
 {{ include "common.env-var" (dict "name" "REPORT_STRATEGY" "dict" .Values.oracle "value_name" "reportStrategy") | indent 8 }}
 {{ include "common.env-var" (dict "name" "REPORT_TARGET_OVERRIDE" "dict" .Values.oracle "value_name" "reportTargetOverride" "optional" true) | indent 8 }}
+{{ include "common.env-var" (dict "name" "SSL_REGISTRY_ADDRESS" "dict" .Values.oracle "value_name" "sslRegistryAddress") | indent 8 }}
 {{ include "common.env-var" (dict "name" "TARGET_MAX_HEARTBEAT_PERIOD_MS" "dict" .Values.oracle.reporter.blockBased "value_name" "targetMaxHeartbeatPeriodMs" "optional" true) | indent 8 }}
 {{ include "common.env-var" (dict "name" "UNUSED_ORACLE_ADDRESSES" "dict" .Values.oracle "value_name" "unusedOracleAddresses") | indent 8 }}
 {{ include "common.env-var" (dict "name" "WALLET_TYPE" "dict" .Values.oracle "value_name" "walletType") | indent 8 }}
